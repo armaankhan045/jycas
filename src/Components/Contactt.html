@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Audit, Assurance, Taxation and Outsourcing Services | J Y & CO. Chartered Accountants</title>
+<link rel="shortcut icon" type="image/ico" href="assets/icon.png" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+<!-- swal alerts -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+<!-- swal alerts -->
+
+<link rel="stylesheet" href="css/style.css">
+<!-- <link rel="stylesheet" href="css/main_header.css">
+<link rel="stylesheet" href="css/tablet.css">
+<link rel="stylesheet" href="css/mobile.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="wapper">
+        <div style="position: relative;">
+    <header id="header_main" class='header header_trans header_ablte'>
+      <nav class="container">
+        <div class='navbar_logo'  onclick='window.open("https\://jycas.com/","_self");'>
+            <img src='assets/logo_2.png' />
+        </div>
+        <!-- <OpenCloseButton onClick={isShow} /> -->
+        <div>
+          <input type="checkbox" class='menu_in' id='menu_in' />
+          <label for="menu_in" class='icon'>
+            <div class='menu'></div>
+          </label>
+        </div>
+        <ul id="menu_list">
+          <li>
+            <a href="https://jycas.com/">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="About">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Services
+            </a>
+            <ul>
+              <li>
+                <a href="Audit &amp; Assurance">
+                  Audit &amp; Assurance
+                </a>
+                <ul>
+                  <li>
+                    <a href="Audit &amp; Assurance">
+                      Statutory Audit
+                    </a>
+                  </li>
+                  <li>
+                    <a href="Audit &amp; Assurance">
+                      Tax Audit
+                    </a>
+                  </li>
+                  <li>
+                    <a href="Audit &amp; Assurance">
+                      Internal Audit
+                    </a>
+                  </li>
+                  <li>
+                    <a href="Audit &amp; Assurance">
+                      Certification Services
+                    </a>
+                  </li>
+                  <li>
+                    <a href="Audit &amp; Assurance">
+                      Agreed Upon Procedures
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="Taxation">
+                  Taxation
+                </a>
+                <ul>
+                  <li>
+                    <a href="Taxation">
+                      Income Tax
+                    </a>
+                  </li>
+                  <li>
+                    <a href="Taxation">
+                      Goods and Services Tax (GST)
+                    </a>
+                  </li>
+                  <li>
+                    <a href="Taxation">
+                      Expat Taxation
+                    </a>
+                  </li>
+                  <li>
+                    <a href="Taxation">
+                      International Tax Planning
+                    </a>
+                  </li>
+                  <li>
+                    <a href="Taxation">
+                      Tax Compliance
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="Business Support"> 
+                  Business Support
+                </a>
+                <ul>
+                  <li>
+                    <a href="Business Support">
+                      Accounting Services
+                    </a>
+                  </li>
+                  <li>
+                    <a href="Business Support">
+                      Payroll Management
+                    </a>
+                  </li>
+                  <li>
+                    <a href="Business Support">
+                      Registration &amp; Compliance
+                    </a>
+                  </li>
+                  <li>
+                    <a href="Business Support">
+                      Design of Standard Operating Procedures(SOP)
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="Management Consultancy">
+                  Management Consultancy
+                </a>
+                <ul>
+                  <li>
+                    <a href="Management Consultancy">
+                      Corporate Finance/Project Finance
+                    </a>
+                  </li>
+                  <li>
+                    <a href="Management Consultancy">
+                      Due Diligence services
+                    </a>
+                  </li>
+                  <li>
+                    <a href="Management Consultancy">
+                      Mergers &amp; Acquisitions
+                    </a>
+                  </li>
+                  <li>
+                    <a href="Management Consultancy">
+                      Process Improvement
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="International Transactions">
+                  International Transactions
+                </a>
+                <ul>
+                  <li>
+                    <a href="International Transactions">
+                      Incorporation of Company Outside India
+                    </a>
+                  </li>
+                  <li>
+                    <a href="International Transactions">
+                      International Taxation
+                    </a>
+                  </li>
+                  <li>
+                    <a href="International Transactions">
+                      India Entry Strategies and Services
+                    </a>
+                  </li>
+                  <li>
+                    <a href="International Transactions">
+                      FEMA/RBI Compliance
+                    </a>
+                  </li>
+                  <li>
+                    <a href="International Transactions">
+                      Transfer Pricing
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="New Business Setup">
+                  New Business Setup
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="careers">
+              Careers
+            </a>
+          </li>
+          <li>
+            <a href="Contact">
+              Contact
+            </a>
+          </li>
+          <li>
+            <a href="Login">
+              Login
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+    <div class='header-bg'></div>
+    </div>
+    <main>
+    <section class="container">
+        <div class="row pt-5 align-items-md-center">
+          <div class="col-md-5">
+            <img class="wl_img" src="assets/contact.jpg" />
+          </div>
+          <div class="col-md-7 align-middle">
+            <div class="banner-bold">
+              <span class="bold">Contact</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container mb-5">
+        <div class="row mt-5 justify-content-center align-content-center">
+          <div class="col-xs-12 col-sm-12  col-md-12 col-lg-12">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 mt-3">
+                <div class="contact_tab">
+                  <div class="contact_icon"><i class="fa fa-map-marker"></i></div>
+                  <div class="contact_title">Location</div>
+                  <p class="text_center">
+                    B1, 3rd Floor, IA Colony, <br>Off Sardar Patel Road, <br>Begumpet, Hyderabad,
+                    <br>Telangana 500003, India.
+                  </p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 mt-3">
+                <div class="contact_tab">
+                  <div class="contact_icon"><i class="fa fa-phone"></i></div>
+                  <div class="contact_title">Phone Number</div>
+                  <p class="text_center" style="width: max-content;margin: auto;text-align: right;">
+                    +91 40 4018 8989<br>
+                    +91 40 2935 8989<br>
+                    +91 949371 8989<br>
+                    +1  347 391 8989
+                  </p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 mt-3">
+                <div class="contact_tab">
+                  <div class="contact_icon"><i class="fa fa-envelope"></i></div>
+                  <div class="contact_title">Email</div>
+                  <p class="text_center">
+                    <a href="mailto:info@jycas.com" target="_self" style="color: inherit;text-decoration:none;">info@jycas.com</a><br/><br/>
+                  </p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 mt-3">
+                <div class="contact_tab">
+                  <div class="contact_icon"><i class="fa fa-calendar"></i></div>
+                  <div class="contact_title">Office Timings</div>
+                  <p class="text_center">
+                    <span>Monday to Saturday <br>09:30 am - 06:30 pm (IST)<br></span>
+                    <span id="YODAY_TIME"></span>
+                    <span id="OPEN_CLOSE"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container mb-5">
+        <div class="row mt-5 justify-content-center align-content-center">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mt-3">
+                <div style="padding: .5rem;background: #c3b03a;border-radius: 10px;">
+                  <!-- <h4 class="tab_heading text_left">
+                    <div>
+                      <span class="bold">Reach </span> Us
+                    </div>
+                  </h4> -->
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.337965146046!2d78.47063011435397!3d17.44353090577597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9a4a95555555%3A0x8167712a4990f3a9!2sJ%20Y%20%26%20CO%2C%20Chartered%20Accountants!5e0!3m2!1sen!2sin!4v1646373808818!5m2!1sen!2sin"
+                    style="border: 0;width:100%; height: 450px"
+                  ></iframe>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mt-3">
+              <form class="form_inner" method="post" enctype="multipart/form-data" >
+                  <div>
+                    <input
+                      name="NAME"
+                      type="text"
+                      title="Name Can not be blank"
+                      required=""
+                      placeholder="Name"
+                    />
+                    <input
+                    name="COMPANY_NAME"
+                      type="text"
+                      placeholder="Organization Name"
+                    />
+                    <input
+                    name="EMAIL"
+                      type="email"
+                      pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$"
+                      title="Please enter valid eMail address"
+                      required=""
+                      placeholder="Email"
+                    />
+                    <input
+                    name="PHONE_NO"
+                      type="text"
+                      maxlength="10"
+                      minlength="10"
+                      pattern="^\d{10}$"
+                      pattern="^\d{10}$"
+                      title="should be number and should be 10 digits"
+                      placeholder="Phone Number"
+                      required=""
+                    />
+                    <select name="SERVICE" required="">
+                      <option selected="">Select Service</option>
+                      <option value="Statutory Audit">Statutory Audit</option>
+                      <option value="Internal Audit">Internal Audit</option>
+                      <option value="Certification Services">
+                        Certification Services
+                      </option>
+                      <option value="Income Tax">Income Tax</option>
+                      <option value="Goods and Services Tax (GST)">
+                        Goods and Services Tax (GST)
+                      </option>
+                      <option value="Company Incorporation">
+                        Company Incorporation
+                      </option>
+                      <option value="Accounting Services">
+                        Accounting Services
+                      </option>
+                      <option value="Payroll Management">
+                        Payroll Management
+                      </option>
+                      <option value="ROC Compliance">ROC Compliance</option>
+                      <option value="Incorporation of Company Outside India">
+                        Incorporation of Company Outside India
+                      </option>
+                      <option value="International Taxation">
+                        International Taxation
+                      </option>
+                      <option value="Other Services">Other Services</option>
+                    </select>
+                    <textarea
+                    maxlength="500"
+                    name="MESSAGE"
+                      rows="3"
+                      placeholder="Your Message"
+                    ></textarea>
+                    <div class="text_right">
+                      <input type="submit" name="Send" id="submit_details" value="Send" disabled/>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class='footer p-4 pb-4'>
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      © 2021 by J Y & CO
+    </div>
+  </div>
+</section>
+<script>
+  $("#menu_in").click(function(){
+    // alert('1');
+    $("#menu_list").toggle();
+  });
+  $(window).scroll(function () {
+        if ($(this).scrollTop() > 60) {
+          $('#header_main').addClass('header_fix header_color');
+          $('#header_main').removeClass('header_ablte header_trans');
+        } else if ($(this).scrollTop() < 60) {
+          $('#header_main').removeClass('header_fix header_color');
+          $('#header_main').addClass('header_ablte header_trans');
+        }
+    });
+</script>  </div>
+  <script type="text/javascript">
+  // d = new Date();
+  // utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+	var now = new Date();
+	var weekday = new Array(7);
+	weekday[0] = "Sunday";
+	weekday[1] = "Monday";
+	weekday[2] = "Tuesday";
+	weekday[3] = "Wednesday";
+	weekday[4] = "Thursday";
+	weekday[5] = "Friday";
+	weekday[6] = "Saturday";
+
+	var checkTime = function() {
+    var currentdate = new Date(); 
+    var today_2 = weekday[now.getDay()];
+    var timeDiv_2 = document.getElementById('timeDiv');
+    // var DAY = document.getElementById('DAY');
+    // var TIMING = document.getElementById('TIMING');
+    var OPEN_CLOSE_2 = document.getElementById('OPEN_CLOSE');
+    var dayOfWeek_2 = now.getDay();
+    var hour_2 = currentdate.getHours();
+    var minutes_2 = currentdate.getMinutes();
+    var seconds_2 = currentdate.getSeconds();
+    var suffix = hour_2 >= 12 ? "PM" : "AM";
+    if (minutes_2 < 10) {
+      minutes_2 = "0" + minutes_2;
+    }
+    if (hour_2 > 12) {
+      hour_2 = ((hour_2 + 11) % 12+1); //i.e. show 1:15 instead of 13:15
+    }
+    if ( hour_2 < 10) {
+      hour_2 = ("0"+hour_2); //i.e. show 1:15 instead of 13:15
+    }
+    if ( seconds_2 < 10) {
+      seconds_2 = ("0"+seconds_2); //i.e. show 1:15 instead of 13:15
+    }
+    var its = 'It\'s ' + today_2 +' - '+hour_2+":"+minutes_2+":"+seconds_2+" "+suffix+"&nbsp";
+    $('#YODAY_TIME').html(its);
+    
+    $.post("time.php",{
+      // dataType: 'JSON',
+      table: 'client_info_shareholders',
+      },function(html, st)
+      {
+        var result=JSON.parse(html);
+        var today = result['day'];
+		    var time = result['time'].split(':');
+        var hour = time[0];
+        var minutes = time[1];
+        var seconds = time[2];
+
+        if (today == 'Sunday')
+        {
+         $('#OPEN_CLOSE').html(" <br> <span style='color:red;'> We are closed now!</span>");
+        }
+        else{
+          var test='';
+          if ((test.concat(hour, minutes) >=930) && (test.concat(hour, minutes) <=1830))
+          {
+            $('#OPEN_CLOSE').html(" <br> We are open now!");
+          }
+          else
+          $('#OPEN_CLOSE').html(" <br> <span style='color:red;'>We are closed now!</span>");
+        }
+      });
+		// var OPEN_CLOSE = document.getElementById('OPEN_CLOSE');
+		// var hour = currentdate.getHours();
+		// var minutes = currentdate.getMinutes();
+		// var seconds = currentdate.getSeconds();
+		// var test='';
+		// var suffix = hour >= 12 ? "PM" : "AM";
+		// if (minutes < 10) {
+		// minutes = "0" + minutes;
+		// }
+		// if (hour == 0 || hour > 12) {
+		// hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
+		// }
+		// if ( hour < 10) {
+		// hour = ("0"+hour); //i.e. show 1:15 instead of 13:15
+		// }
+    // if ( seconds < 10) {
+    //   seconds = ("0"+seconds); //i.e. show 1:15 instead of 13:15
+		// }
+    // var its = 'It\'s ' + today +' - '+hour+":"+minutes+":"+seconds+" "+suffix+"&nbsp";
+		// if (dayOfWeek == 0)
+		// {
+		// 	OPEN_CLOSE.innerHTML =its +" <br> <span style='color:red;'> We are closed now!</span>";
+		// }
+		// else
+		// {
+		// 	if ((test.concat(currentdate.getHours(), minutes) >=930) && (test.concat(currentdate.getHours(), minutes) <=1830))
+		// 	{
+		// 		OPEN_CLOSE.innerHTML= its +" <br> We are open now!";
+		// 	}
+		// 	else
+		// 		OPEN_CLOSE.innerHTML=its +" <br> <span style='color:red;'>We are closed now!</span>";
+		// }
+	};
+	// var currentDay = weekday[now.getDay()];
+	// var currentDayID = "#" + currentDay; //gets todays weekday and turns it into id
+	// $(currentDayID).toggleClass("today"); //hightlights today in the view hours modal popup
+
+	setInterval(checkTime, 1000);
+	checkTime();
+</script>
+<script>
+  function alerts_swal(title, msg, type){
+    sweetAlert(
+      title,
+      msg,
+      type
+    )
+  }
+  if(''!='' && ''!=''){
+  alerts_swal('', '', '')
+  }
+</script>
+</body>
+
+</html>

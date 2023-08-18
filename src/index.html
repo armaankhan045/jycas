@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <script type="text/javascript"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"
+      async>
+      d = new Date();
+      utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+      var now = new Date();
+      var weekday = new Array(7);
+      weekday[0]="Sunday";
+      weekday[1]="Monday";
+      weekday[2]="Tuesday";
+      weekday[3]="Wednesday";
+      weekday[4]="Thursday";
+      weekday[5]="Friday";
+      weekday[6]="Saturday";
+
+      var checkTime=function () {
+      var currentdate=new Date();
+        var today_2=weekday[now.getDay()];
+        var timeDiv_2=document.getElementById('timeDiv');
+        var DAY=document.getElementById('DAY');
+        var TIMING=document.getElementById('TIMING');
+        var OPEN_CLOSE_2=document.getElementById('OPEN_CLOSE');
+        var dayOfWeek_2=now.getDay();
+        var hour_2=currentdate.getHours();
+        var minutes_2=currentdate.getMinutes();
+        var seconds_2=currentdate.getSeconds();
+        var suffix=hour_2 >= 12 ? "PM":"AM";
+        if (minutes_2<10) {
+          minutes_2="0"+ minutes_2;
+        }
+        if (hour_2>12) {
+          hour_2=((hour_2+11)%12+1);i.e. show 1:15 instead of 13:15
+        }
+        if (hour_2<10) {
+          hour_2=("0"+hour_2);i.e. show 1:15 instead of 13:15
+        }
+        if (seconds_2 < 10) {
+          seconds_2 = ("0"+seconds_2);i.e. show 1:15 instead of 13:15
+        }
+        var its = 'It\'s '+today_2+'-'+hour_2+":"+ minutes_2 +":"+ seconds_2+" "+ suffix+"&nbsp";
+        $('#YODAY_TIME').html(its);
+
+        $.post("time.php", {
+          dataType: 'JSON',
+          table: 'client_info_shareholders',
+        }, function (html, st) {
+          var result = JSON.parse(html);
+          var today = result['day'];
+          var time = result['time'].split(':');
+          var hour = time[0];
+          var minutes = time[1];
+          var seconds = time[2];
+
+          if (today == 'Sunday') {
+            $('#OPEN_CLOSE').html(" <br> <span style='color:red;'> We are closed now!</span>");
+          }
+          else {
+            var test = '';
+            if ((test.concat(hour, minutes) >= 930) && (test.concat(hour, minutes) <= 1830)) {
+              $('#OPEN_CLOSE').html(" <br> We are open now!");
+            }
+            else
+              $('#OPEN_CLOSE').html(" <br> <span style='color:red;'>We are closed now!</span>");
+          }
+        });
+        var OPEN_CLOSE = document.getElementById('OPEN_CLOSE');
+      var hour = currentdate.getHours();
+         var minutes = currentdate.getMinutes();
+         var seconds = currentdate.getSeconds();
+         var test='';
+       var suffix = hour >= 12 ? "PM" : "AM";
+         if (minutes < 10) {
+         minutes = "0" + minutes;
+         }
+        if (hour == 0 || hour > 12) {
+         hour = ((hour+11) % 12+1);i.e. show 1:15 instead of 13:15
+         }
+         if ( hour < 10) {
+        hour = ("0"+hour);i.e. show 1:15 instead of 13:15
+         }
+         if ( seconds < 10) {
+           seconds = ("0"+seconds); i.e. show 1:15 instead of 13:15
+         }
+        var its = 'It\'s '+today+' - '+hour+":"+minutes+":"+seconds+" "+suffix+"&nbsp";
+         if (dayOfWeek == 0)
+        {
+        	OPEN_CLOSE.innerHTML =its +" <br> <span style='color:red;'> We are closed now!</span>";
+         }
+        else
+        {
+         	if ((test.concat(currentdate.getHours(), minutes) >=930) && (test.concat(currentdate.getHours(), minutes) <=1830))
+        	{
+         		OPEN_CLOSE.innerHTML= its+" <br> We are open now!";
+         	}
+        	else
+        		OPEN_CLOSE.innerHTML=its+" <br> <span style='color:red;'>We are closed now!</span>";
+        }
+      };
+       var currentDay = weekday[now.getDay()];
+       var currentDayID = "#" + currentDay;gets todays weekday and turns it into id
+       $(currentDayID).toggleClass("today");hightlights today in the view hours modal popup
+
+      setInterval(checkTime, 1000);
+      checkTime();
+    </script>
+  
+  </head>
+  <body>
+    
+    <div id="root"></div>
+  </body>
+</html>
